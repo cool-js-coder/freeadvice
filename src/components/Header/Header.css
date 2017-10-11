@@ -1,0 +1,6 @@
+.header-container {
+  background:#97b2ff;height:60px;display:table;width:100%;text-align: left;color:#fff;
+}
+.header-container ul{display:inline-block;float:right;}
+.header-container ul li{display:inline-block;list-style: none;margin:10px}
+.header-container ul li a{color:#fff;text-decoration:none;}
