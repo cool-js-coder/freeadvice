@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
+import React, { PropTypes, Component } from 'react';
+import classnames from 'classnames'
+
 import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
+import './style.css';
+//import Header from './components/Header';
 
 class App extends Component {
   render() {
+    const { className, ...props } = this.props;
     return (
-      <div className="App">
-        <Header />
+      <div className={classnames('App', className)} {...props}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
